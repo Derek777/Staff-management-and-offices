@@ -1,0 +1,28 @@
+#maket {
+    width: 100%;
+}
+TD {
+    vertical-align: top;
+    padding: 5px;
+}
+TD#leftcol {
+    width: 50%;
+    background: #ccc;
+}
+TD#rightcol {
+    background: #fc3;
+}
+
+#popup {
+    display: none;
+    background: #fff;
+    background-color: cornsilk;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: auto;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -175px;
+    z-index: 999;
+}

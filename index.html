@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+    <title></title>
+</head>
+<body>
+<table cellspacing="0" id="maket" class="table">
+    <tr>
+        <td id="leftcol">
+            <h4>Company offices management</h4>
+            <form>
+                <input id="newOfficeName" type="text" placeholder="new office" class="form-control">
+                <input id="razinput" type="button" value="create" class="btn btn-success btn-sm">
+            </form>
+            <table id="offices" class="table table-hover">
+                <tr class="officeNode">
+                    <td><input class="office" id="1" type="checkbox"></td>
+                    <td id="one" class="officeName">office name</td>
+                </tr>
+                <tr class="officeNode">
+                    <td><input class="office" id="2" type="checkbox"></td>
+                    <td id="two" class="officeName">office name</td>
+                </tr>
+                <tr class="officeNode">
+                    <td><input class="office" id="3" type="checkbox"></td>
+                    <td id="three" class="officeName">office name</td>
+                </tr>
+                <tr class="officeNode">
+                    <td><input class="office" id="4" type="checkbox"></td>
+                    <td id="four" class="officeName">office name</td>
+                </tr>
+            </table>
+            <input id="dwainput" type="button" value="remove" class="btn btn-danger">
+            <div id="popup">
+                <p id="popupText" class="bg-info">Do you really want to delete this office(s)</p>
+                <div id="vstavka"></div><br/>
+                <input id="officeYes" type="button" value="remove" class="btn btn-danger btn-md">
+                <input id="officeNo" type="button" value="do not remove" class="btn btn-success btn-md">
+            </div>
+        </td>
+        <td id="rightcol">
+            <h4>Staff members management</h4>
+            <form>
+                <input  id="newWorkers" type="text" placeholder="new employee" class="form-control">
+                <input type="button" value="create" id="addWorker" class="btn btn-success btn-sm">
+                <select id="select" name="ddd" class="btn-primary btn-sm"></select>
+            </form>
+            <br>
+            <table id="workers" class="table table-hover">
+                <tr>
+                    <td><span class="glyphicon glyphicon-user"></span></td>
+                    <td>name</td>
+                    <td>office</td>
+                    <td>date</td>
+                </tr>
+            </table>
+            <input id="removeWorker" type="button" value="remove" class="btn btn-danger">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
